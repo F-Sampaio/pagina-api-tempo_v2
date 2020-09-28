@@ -7,16 +7,20 @@
     <title>Weather Page v2</title>
 </head>
 <body>
-    <div class="searchBar">
-        City Name: <input type="text" id="cityName" name="cityName">
-        <input type="submit" id="searchBtn" name="searchBtn" value="Search">
+    <div class="request">
+        <div class="searchBar">
+            City Name: <input type="text" id="cityName" name="cityName">
+            <input type="submit" id="searchBtn" name="searchBtn" value="Search">
+        </div>
+        <br>
+        <div class="">
+            <button class="switchThermometricScale" id="switchThermometricScale" value="">switch</button>
+        </div>
     </div>
-    <br>
-    <div class="">
-        <button class="switchThermometricScale" id="switchThermometricScale" value="">switch</button>
+    <div id="response">
     </div>
-    <div class="">
-    </div>
+
+
     <script src="config/dist/bundle.js"></script>
 </body>
 </html> 
