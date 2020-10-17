@@ -7,7 +7,7 @@ export const requestCurrentWeather = (cityName) => {
     if(flag) { URL_CURRENT_WEATHER += `&units=metric`;}
     fetch(URL_CURRENT_WEATHER, {method:'get'})
         .then(response => { response.json()
-            .then(result => { responseElementsforCurrent(result) });
+            .then(result => {console.log(result); responseElementsforCurrent(result) });
         })
         .catch(error => { console.error(error); });
 }

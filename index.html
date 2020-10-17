@@ -3,29 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./src/css/custom.css">
     <title>Weather Page v2</title>
 </head>
 <body>
-    <div class="request">
-        <div class="searchBar">
-            City Name: <input type="text" id="cityName" name="cityName">
-            <input type="submit" id="searchBtn" name="searchBtn" value="Search">
-        </div>
-        <br>
-        <div class="">
-            <button class="switchThermometricScale" id="switchThermometricScale" value="">switch</button>
+    <div class="container">
+        <div class="row">
+            <div class="seven columns">
+                <input class="u-full-width" type="text" id="cityName" name="cityName" placeholder="City Name...">
+            </div>
+            <div class="four columns">
+                    <input class="" type="submit" id="searchBtn" name="searchBtn" value="Search">
+                    <button class="switchThermometricScale" id="switchThermometricScale" value="">switch</button>
+            </div>
         </div>
     </div>
-    <div id="response">
-        <h1 id="response_cityName"></h1>
-        <h2 id="response_current_temp"></h2>
-        <p id="response_current_weatherDescription"></p>
-        <p id="response_current_weatherIcon"></p>
-        <p id="response_current_weatherMain"></p>
+    <div class="container">
+        <div class="row" >
+            <div class="six columns card offset-by-three" id="currentCard">
+                <h1 id="response_cityName"></h1>
+                <h2 id="response_current_temp"></h2>
+                <p id="response_current_weatherDescription"></p>
+                <img id="response_current_weatherIcon"/>
+                <p id="response_current_weatherMain"></p>
+            </div>
+        </div>
     </div>
-
-
     <script src="config/dist/bundle.js"></script>
 </body>
 </html> 

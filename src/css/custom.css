@@ -1,0 +1,32 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-image: url(https://images.pexels.com/photos/2775196/pexels-photo-2775196.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#cityName {
+    background-color: transparent;
+    font-size: 16px;
+    color: #fff;
+}
+::placeholder {
+    color: #fff;
+}
+#cityName, #searchBtn, #switchThermometricScale {
+    border: 1px solid #fff;
+    color: #fff;
+}
+.card {
+    color: #fff;
+    visibility: hidden;
+    border-radius: 5px;
+}
+
+#currentCard {
+    backdrop-filter: blur(10px) opacity(.9);
+    text-align: center;
+}
