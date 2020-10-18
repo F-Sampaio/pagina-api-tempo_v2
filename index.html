@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./src/css/custom.css">
     <title>Weather Page v2</title>
 </head>
 <body>
     <div class="container">
         <div class="row">
-            <div class="seven columns">
+            <div class="one-half column">
                 <input class="u-full-width" type="text" id="cityName" name="cityName" placeholder="City Name...">
             </div>
-            <div class="four columns">
-                    <input class="" type="submit" id="searchBtn" name="searchBtn" value="Search">
+            <div class="one-half column">
+                    <button type="submit" id="searchBtn" name="searchBtn"><i class="fas fa-search"></i></button>
                     <button class="switchThermometricScale" id="switchThermometricScale" value="">switch</button>
             </div>
         </div>
@@ -23,13 +24,15 @@
         <div class="row" >
             <div class="six columns card offset-by-three" id="currentCard">
                 <h1 id="response_cityName"></h1>
-                <h2 id="response_current_temp"></h2>
+                <img id="response_current_weatherIcon"/><h2 id="response_current_temp"></h2>
                 <p id="response_current_weatherDescription"></p>
-                <img id="response_current_weatherIcon"/>
                 <p id="response_current_weatherMain"></p>
             </div>
         </div>
     </div>
+    <footer class="footer">
+        <p>Developed with 💙 by <a target="_blank" href="https://www.linkedin.com/in/franklin-sampaio-2998a416b/">Franklin Sampaio</a> </p>
+    </footer>
     <script src="config/dist/bundle.js"></script>
 </body>
 </html> 
